@@ -1,12 +1,12 @@
-# JQuery My Status Message
+# JQuery Status Message
 
 > Original Repos:   
-> - JQuery My Status Message: https://github.com/a19836/jquery-status-message/   
+> - JQuery Status Message: https://github.com/a19836/jquery-status-message/   
 > - Bloxtor: https://github.com/a19836/bloxtor/
 
 ## Overview
 
-**JQuery My Status Message** is a lightweight JavaScript library for displaying info and error messages elegantly.
+**JQuery Status Message** is a lightweight JavaScript library for displaying info and error messages elegantly.
 
 Check out a live example by opening [index.html](index.html).
 
