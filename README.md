@@ -1,7 +1,7 @@
 # JQuery My Status Message
 
 > Original Repos:   
-> - JQuery My Status Message: https://github.com/a19836/jquerymystatusmessage/   
+> - JQuery My Status Message: https://github.com/a19836/jquery-status-message/   
 > - Bloxtor: https://github.com/a19836/bloxtor/
 
 ## Overview
